@@ -12,6 +12,12 @@ const { createClient } = require("redis");
 const app = express();
 app.use(cors());
 
+// Add a url as cors
+
+// Include every URL as cors
+
+app.use(cors({ origin: "*" }));
+
 // Create HTTP server
 const server = http.createServer(app);
 
